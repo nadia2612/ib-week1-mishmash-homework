@@ -1,14 +1,13 @@
-const addPersonToGroup = (acc, currentPerson, key) => {
-  const currentArray = acc[key] || [];
+const addPersonToGroup = (acc, currentPerson, groupKey) => {
+  const currentArray = acc[groupKey] || [];
   currentArray.push(currentPerson);
-  acc[key] = currentArray;
+  acc[groupKey] = currentArray;
   return acc;
 };
 
 module.exports.groupAdultsByAgeRange = function(people) {
   return people
     .filter(person => person.age >= 18)
-
     .reduce((acc, cur) => {
       if (cur.age <= 20) {
         return addPersonToGroup(acc, cur, `20 and younger`);
