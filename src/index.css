@@ -1,0 +1,47 @@
+body {
+  background-color: #524e4e;
+  display: flex;
+  font-family: "Liu Jian Mao Cao";
+  text-align: center;
+  margin: 0;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  border-radius: 5px;
+  border: groove;
+  padding: 1rem 0;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+}
+
+#table {
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+td,
+tr {
+  border: groove;
+  border-radius: 5px;
+  text-align: left;
+  color: #ffffff;
+}
+
+button {
+  border: groove;
+  margin: 3px;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  background-color: rgba(100, 96, 96, 0.06);
+}
